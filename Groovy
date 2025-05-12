@@ -1,0 +1,7 @@
+ def countElements(List<Integer> list) {
+    def countMap = [:]
+    list.each { element ->
+        countMap[element] = countMap.getOrDefault(element, 0) + 1
+    }
+    return countMap
+}
